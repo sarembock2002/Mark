@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>#{get 'title' /}</title>
+        <meta charset="${_response_encoding}">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
+        <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
+		<link href="/public/stylesheets/bootstrap.min.css" rel="stylesheet">
+		<link href="/public/stylesheets/simple-sidebar.css" rel="stylesheet">
+        <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+		<script src="/public/javascripts/bootstrap.min.js"></script>
+		
+   
+    </head>
+    <body>
+        <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Horsey
+                    </a>
+                </li>
+				<li>
+                    <a href="@{Application.index()}">Home</a>
+                </li>
+                <li>
+                    <a href="@{Application.mystable()}">My Stable</a>
+                </li>
+                <li>
+                    <a href="#">Calendar</a>	
+                </li>
+				<li>
+                    <a href="#">Invoices</a>
+                </li>
+				<li>
+                    <a href="#">Multimedia</a>
+                </li>
+              
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+		<!-- Page Content -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+	        <div class="container-fluid">
+	            <div class="row">
+	                	<nav class="navbar navbar-default">
+	                		<div class="container-fluid">
+	                    		<div class="navbar-header">
+	                      			<a class="navbar-brand" href="#menu-toggle" id="menu-toggle">
+	                        			<img alt="Brand" src="/public/images/glyphicons-517-menu-hamburger.png">
+										<a class="navbar-brand" href="#">Horsey</a>
+	                      			</a>
+	                    		</div>
+	                  		</div>
+	                	</nav>
+	            </div>
+	        </div>
+	        
+        
+        <!-- /#page-content-wrapper -->
+		#{doLayout /}
+		</div>
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="/public/javascripts/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/public/javascripts/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+	
+	$("#wrapper").toggleClass("toggled");
+	
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+    </body>
+</html>
