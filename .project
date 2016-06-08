@@ -15,12 +15,8 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.playframework.playclipse.playNature</nature>
 	</natures>
-<<<<<<< HEAD
 	<linkedResources><link><name>secure</name><type>2</type><location>C:/Play/modules/secure/app</location></link>
 <link><name>conf/secure</name><type>2</type><location>C:/Play/modules/secure/conf</location></link>
 <link><name>public/secure</name><type>2</type><location>C:/Play/modules/secure/public</location></link>
 </linkedResources>
-=======
-	
->>>>>>> 7f3a8ebf8e31c0286fe50bc022a2945969d6da4e
 </projectDescription>
