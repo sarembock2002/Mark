@@ -9,7 +9,6 @@ import play.db.jpa.Model;
 @Entity
 public class Horse extends Model {
  
-	public int id;
     public String name;
     //public Trainer trainer;
     
